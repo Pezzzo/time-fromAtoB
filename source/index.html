@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <link rel="preload" href="css/style.min.css" as="style">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="page__body">
+
+  <div class="select-ticket">
+    <form class="form" action="#">
+      <label class="select-path"><span>Выберите путь</span>
+        <select class="route" name="route">
+          <option value="из A в B">из A в B</option>
+          <option value="из B в A">из B в A</option>
+          <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+        </select>
+      </label>
+      <label class="path path-a-b"><span>Выберите время отправления</span>
+        <span>(время московское (GMT+3))</span>
+        <select class="time-a-b" name="time">
+          <option class="qwe" value="18:00" selected>18:00</option>
+          <option value="18:30">18:30</option>
+          <option value="18:45">18:45</option>
+          <option value="19:00">19:00</option>
+          <option value="19:15">19:15</option>
+          <option value="21:00">21:00</option>
+        </select>
+      </label>
+      <label class="path path-b-a display-none"><span>Выберите время отправления</span>
+        <span>(время московское (GMT+3))</span>
+        <select class="time-b-a" name="time">
+          <option value="18:30" selected>18:30</option>
+          <option value="18:45">18:45</option>
+          <option value="19:00">19:00</option>
+          <option value="19:15">19:15</option>
+          <option value="19:35">19:35</option>
+          <option value="21:50">21:50</option>
+          <option value="21:55">21:55</option>
+        </select>
+      </label>
+      <label class="path path-a-b-a display-none"><span>Выберите время <br> обратного отправления</span>
+        <span>(время московское (GMT+3))</span>
+        <select class="time-a-b-a" name="time">
+          <option class="time-a-b-a-option" value="18:30">18:30</option>
+          <option class="time-a-b-a-option" value="18:45">18:45</option>
+          <option class="time-a-b-a-option" value="19:00">19:00</option>
+          <option class="time-a-b-a-option" value="19:15">19:15</option>
+          <option class="time-a-b-a-option" value="19:35">19:35</option>
+          <option class="time-a-b-a-option" value="21:50">21:50</option>
+          <option class="time-a-b-a-option" value="21:55">21:55</option>
+        </select>
+      </label>
+      <label class="num-input"><span>Количество билетов</span>
+        <input class="input" type="number" placeholder="0" value="" required>
+      </label>
+      <button class="form-submit">Посчитать</button>
+    </form>
+    <div class="total"></div>
+  </div>
+
+  <script src="js/get-declension.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

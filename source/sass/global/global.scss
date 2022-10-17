@@ -1,0 +1,25 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.uppercase-mod {
+  text-transform: uppercase;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

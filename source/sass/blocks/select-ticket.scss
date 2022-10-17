@@ -1,0 +1,101 @@
+.select-ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 100px 0 500px;
+  font-size: 20px;
+
+  & span {
+    margin-bottom: 10px;
+  }
+}
+
+.form {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  align-items: end;
+  justify-items: center;
+  margin-bottom: 40px;
+
+  & label {
+    padding: 10px;
+    outline: 2px solid #ccc;
+  }
+
+  & select {
+    font-weight: 700;
+  }
+
+  & option {
+    font-weight: 700;
+
+    &:disabled {
+      color: rgb(164 164 164);
+    }
+  }
+}
+
+.total {
+  width: 500px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid rgb(70 70 70);
+}
+
+.num-input,
+.path,
+.select-path {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font-weight: 700;
+
+  &::placeholder {
+    font-weight: 700;
+  }
+}
+
+.select-path {
+  grid-column: 1/2;
+}
+
+.path-b,
+.path-a {
+  grid-column: 2/3;
+}
+
+.num {
+  grid-column: 3/-1;
+}
+
+.path-a-b-a {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  align-self: start;
+  margin-top: 30px;
+}
+
+.form-submit {
+  grid-column: 2/3;
+  justify-self: center;
+  min-width: 200px;
+  margin-top: 200px;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(75 71 71);
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+.display-none {
+  display: none;
+}
