@@ -85,6 +85,8 @@ const formChangeHandler = () => {
     selectTime = timeToBSelect.value;
   }
 
+  getTime();
+
   options.forEach((el) => {
 
     let departureTime = new Date(`01.01.1970 ${el.value}`);
@@ -100,7 +102,6 @@ const formChangeHandler = () => {
     }
   });
 
-  getTime();
   showFirstAvailableTime(availableTimes);
 };
 
